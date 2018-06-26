@@ -8,7 +8,7 @@ function getIt()
 function frameIt()
 {
   $('img').on('load', function(){
- document.createStyleSheet('style.css');
+ $("head").append($("<link rel='stylesheet' href='style.css' type='text/css' media='screen' />")); //if true, append the new <link> element to the <head> element in oor HTML page    }
 });
 }
 
