@@ -8,7 +8,6 @@ function getIt()
 function frameIt()
 {
   $('img').on('load', function(){
- $("img").append($("<link rel='stylesheet' href='style.css' type='text/css' media='screen' />")); 
 });
 }
 
