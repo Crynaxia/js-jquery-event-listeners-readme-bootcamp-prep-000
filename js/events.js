@@ -8,15 +8,19 @@ function getIt()
 function frameIt()
 {
   $('img').on('load', function(){
-  
+ document.createStyleSheet('style.css');
 });
 }
 
 function pressIt()
 {
-  $(document).on('keypress', function(e) {
-  if(e.which === 71){
-      alert('g was pressed');}})
+  $(document).on('keydown', function(e) 
+  {
+  if(e.which == 71)
+    {
+     alert('g was pressed');
+    }
+  })
 }
 
 function submitIt()
@@ -34,9 +38,9 @@ function submitIt()
 
 $(document).ready(function(){
 
-
-getIt()
-pressIt()
-submitIt()
+frameIt();
+getIt();
+pressIt();
+submitIt();
 
 });
